@@ -8,7 +8,7 @@ function HeroSection() {
     <MainContainer>
         <WrapperContainer>
             <HeroImageContainer>
-                <img src={HeroImage} alt="Hero image" />
+                <img src={HeroImage} alt="heroimage"/>
             </HeroImageContainer>
             <ContentContainer>
                 <Title>
@@ -20,7 +20,7 @@ function HeroSection() {
             </ContentContainer>
         </WrapperContainer>
         <BottomImageContainer>
-            <img src={Pattern} alt="Image" />
+            <img src={Pattern} alt="heroimage" />
         </BottomImageContainer>
     </MainContainer>
   )
@@ -99,17 +99,17 @@ const Title = styled.h3`
         font-size: 26px;
     }
 `;
-const SubTitle = styled.h5`
-    font-size: 22px;
-    font-weight: 900;
-    margin-bottom: 25px;
-    @media all and (max-width: 980px) {
-        font-size: 18px;
-    }
-    @media all and (max-width: 480px) {
-        font-size: 14px;
-    }
-`;
+// const SubTitle = styled.h5`
+//     font-size: 22px;
+//     font-weight: 900;
+//     margin-bottom: 25px;
+//     @media all and (max-width: 980px) {
+//         font-size: 18px;
+//     }
+//     @media all and (max-width: 480px) {
+//         font-size: 14px;
+//     }
+// `;
 const IdentifyButton = styled.div`
     cursor: pointer;
     border: 1px solid #fff;
