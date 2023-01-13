@@ -20,7 +20,9 @@ function DrivesUs() {
                             business drivers; powerful tools to help organisations unlock their potential. Great
                             brands can connect and inspire all who work for, know about, and engage with them.
                             At idenDT’s, it's the passion and love to create brands that are both brilliant and
-                            beautiful that drives us ahead. We want brands to be beautiful, as in visually
+                            beautiful that drives us ahead.<br></br>
+                            <br></br>
+                            We want brands to be beautiful, as in visually
                             impactful, and brilliant, as in having a compelling brand purpose, story, and global
                             acceptance. Our process of creation is multi-faceted. We believe in working together
                             in collaboration with our clients; we believe in asking many questions and openly
@@ -78,7 +80,7 @@ const RightBox = styled.div`
 `;
 const Title = styled.h3 `
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     
     @media all and (max-width: 980px) {
         font-size: 28px;
@@ -88,7 +90,7 @@ const Title = styled.h3 `
     }
 `;
 const ImageContainer = styled.div `
-    width: 65%;
+    width: 85%;
     margin: 0 auto 20px;
     
     img {
@@ -116,6 +118,8 @@ const TagLine = styled.small`
 `;
 const TagContent = styled.p`
     font-size: 26px;
+    font-family: 'inter-bold';
+    font-style: italic;
     display: inline;
 `;
 const DescriptionBox = styled.p`
