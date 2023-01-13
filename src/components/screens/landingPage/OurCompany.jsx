@@ -45,7 +45,7 @@ function OurCompany({scrollRef}) {
 export default OurCompany;
 
 const MainContainer = styled.div `
-    /* height: calc(100vh - 220px); */
+    /* height: calc(100vh - 400px); */
     padding-bottom: 80px;
     @media all and (max-width: 640px) {
         padding-bottom: 30px;
@@ -105,10 +105,10 @@ const RightBoxContainer = styled.div `
 const ImageContainer = styled.div`
     width: 50%;
     @media all and (min-width: 1280px) {
-        width: 40%;
+        width: 55%;
     }
     @media all and (min-width: 1500px) {
-        width: 30%;
+        width: 40%;
     }
 `;
 const CompanyImage = styled.img`
@@ -128,5 +128,7 @@ const TagLine = styled.small`
 `;
 const TagContent = styled.p`
     font-size: 28px;
+    font-family: 'inter-bold';
+    font-style: italic;
     display: inline;
 `;

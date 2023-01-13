@@ -128,6 +128,8 @@ const ImageGallery = styled.div `
 const ImageContainer = styled.div `
     position: relative;
     overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
     img {
         width: 100%;
         display: block;
@@ -135,7 +137,7 @@ const ImageContainer = styled.div `
 `;
 const TagLine = styled.small`
     font-size: 28px;
-    font-style: italic;
+    font-style: bold;
     display: block;
     text-align: center;
     margin-bottom: 25px;
@@ -146,6 +148,7 @@ const TagLine = styled.small`
     `;
 const TagContent = styled.p`
     display: inline;
+    font-family: inter-bold;
     font-style: italic;
 `;
 
@@ -188,7 +191,7 @@ const BottomContent = styled.div `
 const ContentHeading = styled.h5`
     font-size: 22px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     @media all and (max-width: 980px) {
         font-size: 16px;
@@ -201,6 +204,9 @@ const ContentDescription = styled.p`
     &.onHoverContent {
         display: inline-block;
     }
+    &::-webkit-scrollbar {
+        display: none;
+      }
     @media all and (max-width: 980px) {
         font-size: 12px;
     }
