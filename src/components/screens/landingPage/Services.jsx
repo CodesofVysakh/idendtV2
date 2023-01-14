@@ -70,7 +70,7 @@ function Services({serviceRef}) {
                 <ImageGallery>
                     {serviceData.map((item) => (
                         <ImageContainer key={item.id} onMouseEnter={() => setToggle(item.id)} onMouseLeave={() => setToggle()}>
-                            <img src={item.image} alt="Image" />
+                            <img src={item.image} alt="newimage" />
                             <BottomContent className={toggle === item.id ? "hoverContent" : ""}>
                                 <ContentHeading>{item.title}</ContentHeading>
                                 <ContentDescription className={toggle === item.id ? "onHoverContent" : ""}>
@@ -82,7 +82,7 @@ function Services({serviceRef}) {
                 </ImageGallery>
                 <TagLine>" <TagContent>QUALITY OVER QUANTITY <br />AND RESULTS OVER EXCUSES</TagContent> "</TagLine>
                 <ImageContainer>
-                    <img src={Group} alt="Image" />
+                    <img src={Group} alt="qualityImage" />
                 </ImageContainer>
             </WrapperContainer>
         </MainContainer>
@@ -204,9 +204,6 @@ const ContentDescription = styled.p`
     &.onHoverContent {
         display: inline-block;
     }
-    &::-webkit-scrollbar {
-        display: none;
-      }
     @media all and (max-width: 980px) {
         font-size: 12px;
     }
