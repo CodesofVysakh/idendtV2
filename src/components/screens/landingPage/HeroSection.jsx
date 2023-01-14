@@ -8,7 +8,7 @@ function HeroSection() {
     <MainContainer>
         <WrapperContainer>
             <HeroImageContainer>
-                <img src={HeroImage} alt="heroimage"/>
+                <img src={HeroImage} alt="hero image"/>
             </HeroImageContainer>
             <ContentContainer>
                 <Title>
@@ -20,7 +20,7 @@ function HeroSection() {
             </ContentContainer>
         </WrapperContainer>
         <BottomImageContainer>
-            <img src={Pattern} alt="heroimage" />
+            <img src={Pattern} alt="hero image" />
         </BottomImageContainer>
     </MainContainer>
   )
@@ -110,6 +110,7 @@ const Title = styled.h3`
 //         font-size: 14px;
 //     }
 // `;
+
 const IdentifyButton = styled.div`
     cursor: pointer;
     border: 1px solid #fff;

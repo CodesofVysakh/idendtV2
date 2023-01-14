@@ -16,7 +16,7 @@ function OurCompany({scrollRef}) {
                             Our magic recipe blends innovative strategy,
                             creative design, and cutting-edge technology to
                             make beautiful, brilliant brand experiences,
-                            expanding the business’s future vision. 
+                            expanding the business's future vision. 
                         </ContentContainer>
                         <ContentContainer>
                             Our family consists of a group of individuals who
