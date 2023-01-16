@@ -15,7 +15,7 @@ function HeroSection() {
                     BRANDING & BEYOND
                 </Title>
                 <IdentifyButton>
-                    Get Identified
+                    <a href="tel:+917353384340"> Get Identified </a>
                 </IdentifyButton>
             </ContentContainer>
         </WrapperContainer>
@@ -125,6 +125,7 @@ const IdentifyButton = styled.div`
     padding: 10px 20px;
     font-size: 25px;
     margin: 0 auto;
+    a { color: inherit; } 
     transition: all 0.3s ease-in-out;
     :hover{
         background-color: #fff;
