@@ -43,11 +43,13 @@ const MainContainer = styled.div`
         padding-bottom: 20px;
     }
 `;
+
 const WrapperContainer = styled.div`
     width: 80%;
     margin: 0 auto;
     text-align: center;
 `;
+
 const HeroImageContainer = styled.div`
     width: 45%;
     margin: 0 auto;
@@ -62,9 +64,11 @@ const HeroImageContainer = styled.div`
         width: 80%;
     }
 `;
+
 const ContentContainer = styled.div`
     margin: -100px 0 0;
 `;
+
 const BottomImageContainer = styled.div`
     position: relative;
     height: 350px;
@@ -89,6 +93,7 @@ const BottomImageContainer = styled.div`
         height: 100px;
     }
 `;
+
 const Title = styled.h3`
     font-size: 38px;
     margin-bottom: 15px;
