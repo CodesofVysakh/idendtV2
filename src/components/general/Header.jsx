@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from "../../assets/images/logo-white.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,12 +7,13 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Header({setScroll}) {
     const [ toggle, setToggle ] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <MainContainer id="box">
             <WrapperContainer>
                 <LeftBox>
-                    <LogoContainer> 
+                    <LogoContainer onClick={() => navigate('/')}> 
                         <LogoImage src={Logo} alt="Image-Logo"/>
                     </LogoContainer>
                 </LeftBox>
@@ -24,10 +25,30 @@ function Header({setScroll}) {
                         <CloseContainer>
                             <FontAwesomeIcon icon={faXmark} onClick={() => setToggle(false)}/>
                         </CloseContainer>
-                        <span onClick={() => setScroll("about")}>About</span>
-                        <span onClick={() => setScroll("service")}>Services</span>
-                        <span onClick={() => setScroll("team")}>Our Team</span>
-                        <span onClick={() => setScroll("contact")}>Contact</span>
+                        <span onClick={() => {
+                            setScroll("about");
+                            setToggle(false);
+                            navigate('/');
+                            }}>About</span>
+                        <span onClick={() => {
+                            setScroll("service");
+                            setToggle(false);
+                            navigate('/');
+                            }}>Services</span>
+                        <span onClick={() => {
+                            setScroll("team");
+                            setToggle(false);
+                            navigate('/');
+                            }}>Our Team</span>
+                        <span onClick={() => {
+                            setToggle(false);
+                            navigate('/our-stories');
+                            }}>Our Stories</span>
+                        <span onClick={() => {
+                            setScroll("contact");
+                            setToggle(false);
+                            navigate('/');
+                            }}>Contact</span>
                     </MenuContent>
                 </RightBox>
             </WrapperContainer>
@@ -52,6 +73,7 @@ const LeftBox = styled.div `
 `;
 const LogoContainer = styled.div `
     width: 200px;
+    cursor: pointer;
     @media all and (max-width: 480px) {
         width: 130px;
     }

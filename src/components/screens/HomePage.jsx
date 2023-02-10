@@ -10,12 +10,8 @@ import OurCompany from './landingPage/OurCompany';
 import Services from './landingPage/Services';
 import Team from './landingPage/Team';
 
-function HomePage() {
-    const [scroll, setScroll] = useState("")
-    const scrollRef = useRef()
-    const serviceRef = useRef()
-    const teamRef = useRef()
-    const contactRef = useRef()
+function HomePage({scroll, setScroll, scrollRef, serviceRef, teamRef, contactRef}) {
+
     const handleScroll = ()=>{
         if (scroll === "about"){
             scrollRef.current?.scrollIntoView({
@@ -47,7 +43,7 @@ function HomePage() {
     },[scroll])
     return (
         <MainContainer>
-            <Header setScroll={setScroll}/>
+            {/* <Header setScroll={setScroll}/> */}
             <HeroSection />
             <OurCompany scrollRef={scrollRef} />
             <DrivesUs />
