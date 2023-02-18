@@ -11,11 +11,11 @@ function Contact({contactRef}) {
                         <small>6C, Cyber Hills <br />Seaport Airport Road, Kakkanad</small>
                     </TopContent>
                 </TopContainer>
-                <MiddleContainer>
+                {/* <MiddleContainer>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.169492372821!2d76.34608731473288!3d10.002854575729748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c96cee1c871%3A0x425d300c6788beb8!2s6%2C%20Seaport%20-%20Airport%20Rd%2C%20Chittethukara%2C%20Kochi%2C%20Kerala%20682037!5e0!3m2!1sen!2sin!4v1672255393062!5m2!1sen!2sin" 
                         width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </MiddleContainer>
+                </MiddleContainer> */}
                 <BottomContainer>
                     <Title>CONNECT WITH US</Title>
                     <TopContent>
